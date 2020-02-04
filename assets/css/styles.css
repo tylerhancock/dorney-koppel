@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('../webfonts/BrandonGrotesque-Bold.eot');
+  src: url('../webfonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+       url('../webfonts/BrandonGrotesque-Bold.woff') format('woff'),
+       url('../webfonts/BrandonGrotesque-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../webfonts/BrandonGrotesque-Medium.eot');
+  src: url('../webfonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+       url('../webfonts/BrandonGrotesque-Medium.woff') format('woff'),
+       url('../webfonts/BrandonGrotesque-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../webfonts/BrandonGrotesque-Light.eot');
+  src: url('../webfonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/BrandonGrotesque-Light.woff2') format('woff2'),
+       url('../webfonts/BrandonGrotesque-Light.woff') format('woff'),
+       url('../webfonts/BrandonGrotesque-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.container-fluid {
+  max-width: 1440px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* navigation */
+.icon-bar {
+  width: 22px; 
+  height: 2px;
+  background-color: #B6B6B6;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+ 
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
+  border: none;
+  outline: none;
+  background: transparent !important;
+  padding-bottom: 10px;
+}
+
+.navbar-toggler .top-bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.nav-link {
+  text-align: center;
+}
+
+/* hero content */
+.heroContainer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #da8c67;
+  background: url('../images/circle-bg.png') no-repeat; 
+  background-attachment: absolute;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+/* hero background video */
+.fullscreen-bg {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hero-overlay {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.4);
+}
+
+#myVideo {
+  display: none;
+  z-index: 1;
+}
+
+#closeButton {
+  position: absolute;
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate( -50%);
+  display: none;
+  z-index: 10 !important;
+  bottom: 120px;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  #closeButton { 
+    bottom: 80px;
+  }
+}
+
+/* buttons */
+a.btn-outline-primary {
+  border-radius: 100rem;
+  padding: .5rem 1rem;
+  color: #732908;
+  box-shadow: 0 0 3px 0 rgba(157, 96, 212, 0.5);
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(242, 115, 62, 0), rgba(114, 40, 7, 0)), linear-gradient(101deg, #f2733d, #732908);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+a.btn-outline-primary:hover {
+  box-shadow: none;
+  color: white;
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(242, 115, 62, 0), rgba(114, 40, 7, 0)), linear-gradient(101deg, #f2733d, #732908);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* colors */
+.copper {
+  color: #9e421c;
+}
+
+.gradient-text, .active {
+  color: #f2733d;
+  /* standard gradient background */
+  background: linear-gradient(101deg, #f2733d, #732908);
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background-color: #f2733d;
+  background-image: linear-gradient(rgba(242, 115, 62, 0), rgba(114, 40, 7, 0)), linear-gradient(101deg, #f2733d, #732908);
+}
+
+/* hr tag */
+hr {
+  height: 7px;
+  width: 85px;
+  border: 0;
+  border-radius: 2px;
+}
+
+/* backgroud images */
+#beau_mobile_bg {
+  background: url('../images/beau-mobile-bg.jpg') no-repeat; 
+  background-position: bottom center;
+  background-attachment: absolute; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#beau_bg {
+  background: #fff; 
+  background-position: top right;
+  background-attachment: absolute; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  #beau_bg {
+    background: url('../images/beau-desktop-bg.jpg') no-repeat; 
+    background-position: top right;
+    background-attachment: absolute; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#gail_bg {
+  background: url('../images/gail-mobile-bg.jpg') no-repeat; 
+  background-position: top left;
+  background-attachment: absolute; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  #gail_bg {
+    background: url('../images/gail-desktop-bg.jpg') no-repeat; 
+    background-position: top right;
+    background-attachment: absolute; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#imtiaz_bg {
+  background: #a0a0a0; 
+  background-position: top left;
+  background-attachment: absolute; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  #imtiaz_bg {
+    background: url('../images/imtiaz-desktop-bg.jpg') no-repeat; 
+    background-position: top left;
+    background-attachment: absolute; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
