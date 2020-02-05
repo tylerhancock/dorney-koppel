@@ -38,12 +38,23 @@ body {
   font-weight: 500;
 }
 
+.min-vh-50 {
+  min-height: 50%;
+  min-height: 50vh;
+}
+
 p {
   font-size: 1.2em;
 }
 
 a:hover, a:focus {
   text-decoration: none;
+}
+
+.inline-link, .inline-link:hover {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .container-fluid {
