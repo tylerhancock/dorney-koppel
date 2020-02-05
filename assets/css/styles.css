@@ -1,32 +1,32 @@
 @font-face {
   font-family: 'BrandonGrotesque';
-  src: url('../webfonts/BrandonGrotesque-Bold.eot');
-  src: url('../webfonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/BrandonGrotesque-Bold.woff2') format('woff2'),
-       url('../webfonts/BrandonGrotesque-Bold.woff') format('woff'),
-       url('../webfonts/BrandonGrotesque-Bold.ttf') format('truetype');
+  src: url('webfonts/BrandonGrotesque-Bold.eot');
+  src: url('webfonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+       url('webfonts/BrandonGrotesque-Bold.woff') format('woff'),
+       url('webfonts/BrandonGrotesque-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('../webfonts/BrandonGrotesque-Medium.eot');
-  src: url('../webfonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/BrandonGrotesque-Medium.woff2') format('woff2'),
-       url('../webfonts/BrandonGrotesque-Medium.woff') format('woff'),
-       url('../webfonts/BrandonGrotesque-Medium.ttf') format('truetype');
+  src: url('webfonts/BrandonGrotesque-Medium.eot');
+  src: url('webfonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+       url('webfonts/BrandonGrotesque-Medium.woff') format('woff'),
+       url('webfonts/BrandonGrotesque-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('../webfonts/BrandonGrotesque-Light.eot');
-  src: url('../webfonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/BrandonGrotesque-Light.woff2') format('woff2'),
-       url('../webfonts/BrandonGrotesque-Light.woff') format('woff'),
-       url('../webfonts/BrandonGrotesque-Light.ttf') format('truetype');
+  src: url('webfonts/BrandonGrotesque-Light.eot');
+  src: url('webfonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/BrandonGrotesque-Light.woff2') format('woff2'),
+       url('webfonts/BrandonGrotesque-Light.woff') format('woff'),
+       url('webfonts/BrandonGrotesque-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -128,7 +128,8 @@ a:hover, a:focus {
   background-size: cover;
 }
 
-.bottom {
+.demand {
+  z-index: 2;
   bottom: 0;
 }
 
