@@ -326,7 +326,9 @@ hr {
   }
 }
 
-
+.name-right {
+  float: right;
+}
 
 
 
