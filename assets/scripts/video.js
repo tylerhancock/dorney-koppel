@@ -21,7 +21,7 @@ $('#openButton').click(function() {
     // opens the video player overlay
   });
   $('#closeButton').toggle('slow', function() {
-    // displays the clsoe button
+    // displays the close button
   });
 });
 
@@ -39,7 +39,13 @@ $('#myVideo').click(function() {
     // closes the video player overlay
   });
   $('#closeButton').toggle('slow', function() {
-    // displays the clsoe button
+    // displays the close button
+  });
+});
+
+$('#americansbutton').click(function() {
+  $('#americansbutton').toggle('fast', function() {
+    // closes the video player overlay
   });
 });
       

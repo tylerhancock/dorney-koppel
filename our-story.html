@@ -38,6 +38,9 @@
             <li class="nav-item active">
               <a class="nav-link" href="our-story.html">Our Story</a>
             </li>
+            <li class="nav-item cta">
+              <a class="btn btn-outline-primary text-uppercase" href="index.html#movement">Demand More</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -122,5 +125,15 @@
     <script type="text/javascript" src="assets/scripts/video.js"></script>
     <!-- Font Awesome JS -->
     <script src="https://kit.fontawesome.com/739b5ecf7f.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.cta').fadeIn();
+        } else {
+            $('.cta').fadeOut();
+        }
+      });
+    </script><!-- cta in nav -->
   </body>
 </html>

@@ -113,6 +113,7 @@ a:hover, a:focus {
 
 .nav-link {
   text-align: center;
+  padding: .6rem 1rem .5rem;
 }
 
 /* hero content */
@@ -203,7 +204,7 @@ a:hover, a:focus {
 }
 
 /* buttons */
-a.btn-outline-primary {
+a.btn-outline-primary, button.btn-outline-primary {
   border-radius: 100rem;
   padding: .5rem 1rem;
   color: #732908;
@@ -215,14 +216,14 @@ a.btn-outline-primary {
   box-shadow: 2px 1000px 1px #fff inset;
 }
 
-a.btn-outline-primary:hover {
+a.btn-outline-primary:hover, button.btn-outline-primary:hover, button.btn-outline-primary:focus {
   box-shadow: none;
   color: white;
   border: solid 2px transparent;
   background-image: linear-gradient(rgba(242, 115, 62, 0), rgba(114, 40, 7, 0)), linear-gradient(101deg, #f2733d, #732908);
   background-origin: border-box;
   background-clip: content-box, border-box;
-}
+} 
 
 /* colors */
 .copper {
@@ -332,8 +333,9 @@ hr {
   float: right;
 }
 
-
-
+.cta {
+  display: none;
+}
 
 
 
